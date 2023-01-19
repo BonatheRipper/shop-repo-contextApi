@@ -1,0 +1,175 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  padding: 40px;
+
+}
+
+.shop {
+  padding: 30px;
+  width: 98%;
+  gap: 60px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.product-card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 40px;
+  border-radius: 6px;
+
+
+}
+
+.image-card {
+  width: 230px;
+  height: 230px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+button {
+  background-color: white;
+  padding: 5px 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar button {
+  background-color: rgb(48, 106, 233);
+  padding: 14px;
+
+  border-radius: 5px;
+  font-size: 19px;
+  font-weight: 500;
+  color: white;
+  border: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 800px;
+  height: 580px;
+  position: absolute;
+  margin-top: 20px;
+  top: 10%;
+  left: 30%;
+  z-index: 10;
+  border-radius: 2px;
+  padding: 30px;
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0,0,0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-btn-container {
+  margin-left: 90%;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100vw;
+  padding: 2px 20px;
+}
+
+
+.cart-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+}
+
+
+@media (max-width: 780px) {
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar button {
+    padding: 9px;
+    font-size: 15px;
+  }
+
+}
+
+
+
+
+
