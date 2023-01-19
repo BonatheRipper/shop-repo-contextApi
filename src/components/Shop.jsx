@@ -26,7 +26,7 @@ const Shop = () => {
                         </div>
                         <h4>{product.productName}</h4>
                         <h4>{product.price}</h4>
-                        <button onClick={() => addOne(product.id)}>Add to cart ({amount})</button>
+                        <button onClick={() => addOne(product.id)}>Add to cart ({product.amount || 0})</button>
 
                     </div>
                 ))}
